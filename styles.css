@@ -1,0 +1,116 @@
+* {
+    margin: auto;
+}
+
+body,
+html {
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    max-width: 960px;
+}
+
+header h1 {
+    text-align: center;
+    color: crimson;
+    background: rgba(255, 255, 255, .5);
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.block {
+    flex: 2 1 auto;
+    align-self: auto;
+    width: 100%;
+    margin: 20px;
+}
+
+.tetris-wrap {
+    width: 335px;
+    height: 500px;
+    background-image: url(../images/bamboo-border2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, .5);
+    margin: 0 auto;
+}
+
+.text-field {
+    background-color: rgba(255, 255, 255, .5);
+    /* height: 500px; */
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+
+button {
+    border: none;
+    background-color: white;
+    display: block;
+    width: 50%;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: 3px solid green;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px white;
+    color: crimson;
+    font-size: large;
+}
+
+ul{
+    margin-top: 20px;
+    height: 100%;
+}
+
+.score-field{
+    display: block;
+    font-size: 42px;
+    padding: 30px 0;
+    margin-top: 20px;
+    height: 100%;
+}
+
+#tetris-field{
+    width: 260px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 33px;
+}
+
+.white, .lightblue, .orange, .red, .green, .darkblue{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid green;
+}
+
+.lightblue{background-color: lightblue;}
+.orange{background-color: orange;}
+.red{background-color: red;}
+.green{background-color: green;}
+.darkblue{background-color: darkblue;}
